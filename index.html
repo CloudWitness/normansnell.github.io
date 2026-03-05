@@ -13,100 +13,16 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
-      background: #c4b99a;
-      color: #111111;
+      background: #0a0a0a;
+      color: #ffffff;
       font-family: 'Inter', sans-serif;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 1.7;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
     img { max-width: 100%; height: auto; display: block; }
-
-    /* ===== SCRIPTURE BACKGROUND ===== */
-    .scripture-bg {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      background: #c4b99a;
-      overflow: hidden;
-      pointer-events: none;
-    }
-    .scripture-bg .scr-inner {
-      position: absolute;
-      inset: -2vw;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      gap: 0;
-      padding: 1.5vw;
-    }
-    .scripture-bg .scr-panel {
-      font-family: 'Georgia', 'Times New Roman', serif;
-      color: #8a7d6a;
-      font-size: clamp(0.52rem, 0.65vw, 0.72rem);
-      line-height: 1.5;
-      text-align: justify;
-      hyphens: auto;
-      columns: 2;
-      column-gap: 1.8em;
-      column-rule: 1px solid rgba(138, 125, 106, 0.12);
-      overflow: hidden;
-      padding: 1em 1.2em;
-    }
-    .scripture-bg .scr-title {
-      column-span: all;
-      text-align: center;
-      font-size: 1.6em;
-      font-weight: bold;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      margin: 0.6em 0 0.3em;
-      line-height: 1.3;
-      color: rgba(138, 125, 106, 0.85);
-    }
-    .scripture-bg .scr-chap {
-      column-span: all;
-      text-align: center;
-      font-size: 0.95em;
-      font-style: italic;
-      letter-spacing: 0.1em;
-      margin-bottom: 0.5em;
-      color: rgba(138, 125, 106, 0.7);
-    }
-    .scripture-bg .scr-panel p {
-      margin: 0 0 0.25em;
-      text-indent: 0;
-    }
-    .scripture-bg .vn {
-      font-size: 0.75em;
-      font-weight: bold;
-      vertical-align: super;
-      line-height: 0;
-      margin-right: 1px;
-    }
-    .scripture-bg .drop-cap {
-      float: left;
-      font-size: 3.2em;
-      line-height: 0.75;
-      margin: 0.05em 0.06em 0 0;
-      font-weight: bold;
-      color: rgba(138, 125, 106, 0.9);
-    }
-    .scripture-bg .scr-ref {
-      font-size: 0.7em;
-      font-style: italic;
-      color: rgba(138, 125, 106, 0.5);
-      display: block;
-      margin: 0.2em 0;
-    }
-
-    /* Ensure all page content sits above the scripture background */
-    nav, .hero, .problem, .about-book, .sample-chapter, .quotes, .hear-book, .about-author, .faith-history, .substack, footer {
-      position: relative;
-      z-index: 1;
-    }
     a { color: inherit; text-decoration: none; }
 
     /* ===== TYPOGRAPHY ===== */
@@ -115,7 +31,7 @@
       font-weight: 900;
       line-height: 1.15;
       letter-spacing: -0.02em;
-      color: #1a1209;
+      color: #ffffff;
     }
     h1 { font-size: clamp(2.8rem, 6vw, 5.5rem); }
     h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
@@ -128,7 +44,7 @@
       margin: 0 auto;
       padding: 0 clamp(1.5rem, 5vw, 4rem);
     }
-    .accent { color: #b8930a; }
+    .accent { color: #F5C500; }
     .red-accent { color: #CC0000; }
     .brown-accent { color: #8B5E3C; }
 
@@ -146,33 +62,33 @@
       transition: all 0.3s ease;
     }
     .btn-primary {
-      background: #1a1209;
-      color: #F5C500;
+      background: #F5C500;
+      color: #0a0a0a;
     }
     .btn-primary:hover {
-      background: #2a1f10;
+      background: #ffd633;
       transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 30px rgba(245, 197, 0, 0.25);
     }
     .btn-secondary {
       background: transparent;
-      color: #1a1209;
-      border: 1px solid rgba(26,18,9,0.3);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.2);
     }
     .btn-secondary:hover {
-      border-color: #1a1209;
-      color: #1a1209;
+      border-color: rgba(255,255,255,0.6);
+      color: #ffffff;
       transform: translateY(-2px);
     }
     .btn-outline-gold {
       background: transparent;
-      border: 2px solid #8B5E3C;
-      color: #1a1209;
+      border: 2px solid #F5C500;
+      color: #F5C500;
     }
     .btn-outline-gold:hover {
-      background: #1a1209;
-      color: #F5C500;
-      border-color: #1a1209;
+      background: #F5C500;
+      color: #0a0a0a;
+      border-color: #F5C500;
       transform: translateY(-2px);
     }
 
@@ -187,10 +103,10 @@
       transition: all 0.4s ease;
     }
     nav.scrolled {
-      background: rgba(190, 180, 165, 0.95);
+      background: rgba(10, 10, 10, 0.95);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(139, 94, 60, 0.2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       padding: 0.8rem 0;
     }
     nav .container {
@@ -203,7 +119,7 @@
       font-weight: 700;
       font-size: 1.2rem;
       letter-spacing: 0.05em;
-      color: #1a1209;
+      color: #ffffff;
     }
     .nav-links {
       display: flex;
@@ -216,13 +132,11 @@
       font-weight: 500;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      color: #3d2e1a;
-      opacity: 0.75;
+      color: rgba(255,255,255,0.7);
       transition: opacity 0.3s ease, color 0.3s ease;
     }
     .nav-links a:hover {
-      opacity: 1;
-      color: #CC0000;
+      color: #F5C500;
     }
     .nav-toggle {
       display: none;
@@ -236,7 +150,7 @@
     .nav-toggle span {
       width: 24px;
       height: 2px;
-      background: #1a1209;
+      background: #ffffff;
       transition: all 0.3s ease;
     }
 
@@ -264,7 +178,7 @@
       font-weight: 600;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: #CC0000;
+      color: #F5C500;
       margin-bottom: 1.5rem;
       display: flex;
       align-items: center;
@@ -274,18 +188,18 @@
       content: '';
       width: 40px;
       height: 1px;
-      background: #CC0000;
+      background: #F5C500;
     }
     .hero h1 {
       margin-bottom: 1.5rem;
-      color: #1a1209;
+      color: #ffffff;
     }
     .hero-subtitle {
       font-family: 'Playfair Display', serif;
       font-size: clamp(1.1rem, 2vw, 1.5rem);
       font-weight: 400;
       font-style: italic;
-      color: rgba(26,18,9,0.55);
+      color: rgba(255,255,255,0.45);
       margin-bottom: 2.5rem;
       line-height: 1.5;
     }
@@ -304,7 +218,7 @@
       max-width: 380px;
       width: 100%;
       border-radius: 2px;
-      box-shadow: 0 15px 50px rgba(26,18,9,0.25);
+      box-shadow: 0 15px 50px rgba(0,0,0,0.5);
       transition: transform 0.5s ease;
     }
     .hero-image img:hover {
@@ -324,7 +238,7 @@
       transform: translateX(-50%);
       width: 60px;
       height: 1px;
-      background: #CC0000;
+      background: #F5C500;
     }
     .problem .container {
       max-width: 800px;
@@ -335,7 +249,7 @@
     }
     .problem p {
       font-size: clamp(1.05rem, 1.3vw, 1.2rem);
-      color: rgba(26,18,9,0.7);
+      color: rgba(255,255,255,0.6);
       margin-bottom: 1.5rem;
       line-height: 1.9;
     }
@@ -353,7 +267,7 @@
     /* ===== SECTION: ABOUT THE BOOK ===== */
     .about-book {
       padding: clamp(5rem, 10vw, 9rem) 0;
-      background: rgba(26,18,9,0.04);
+      background: rgba(255,255,255,0.02);
       position: relative;
     }
     .about-book .container {
@@ -370,7 +284,7 @@
       max-width: 400px;
       width: 100%;
       border-radius: 2px;
-      box-shadow: 0 15px 40px rgba(26,18,9,0.2);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
     }
     .about-book-text .book-title {
       font-size: clamp(1.8rem, 3.5vw, 2.8rem);
@@ -380,12 +294,12 @@
       font-family: 'Playfair Display', serif;
       font-style: italic;
       font-size: clamp(1rem, 1.5vw, 1.2rem);
-      color: rgba(26,18,9,0.5);
+      color: rgba(255,255,255,0.4);
       margin-bottom: 2.5rem;
     }
     .about-book-text p {
       font-size: clamp(1rem, 1.2vw, 1.1rem);
-      color: rgba(26,18,9,0.7);
+      color: rgba(255,255,255,0.6);
       margin-bottom: 2rem;
       line-height: 1.9;
     }
@@ -396,20 +310,20 @@
     }
     .book-sections li {
       padding: 1rem 0;
-      border-bottom: 1px solid rgba(26,18,9,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
       display: flex;
       align-items: center;
       gap: 1rem;
       font-size: 1.05rem;
       font-weight: 400;
-      color: rgba(26,18,9,0.8);
+      color: rgba(255,255,255,0.7);
       transition: color 0.3s ease;
     }
     .book-sections li:first-child {
-      border-top: 1px solid rgba(26,18,9,0.1);
+      border-top: 1px solid rgba(255,255,255,0.08);
     }
     .book-sections li:hover {
-      color: #CC0000;
+      color: #F5C500;
     }
     .book-sections li::before {
       content: '';
@@ -423,80 +337,14 @@
       font-size: 0.85rem;
       font-weight: 500;
       letter-spacing: 0.05em;
-      color: rgba(26,18,9,0.45);
+      color: rgba(255,255,255,0.3);
       margin-top: 1rem;
     }
 
     /* ===== SECTION: SAMPLE CHAPTER ===== */
     .sample-chapter {
-      padding: clamp(4rem, 8vw, 7rem) 0;
-      position: relative;
-    }
-    .sample-chapter .chapter-card {
-      max-width: 780px;
-      margin: 0 auto;
-      background: rgba(210, 200, 180, 0.55);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      border: 1px solid rgba(139, 94, 60, 0.15);
-      border-radius: 3px;
-      padding: clamp(2.5rem, 5vw, 4.5rem) clamp(2rem, 5vw, 4rem);
-      box-shadow: 0 8px 40px rgba(26, 18, 9, 0.1);
-    }
-    .sample-chapter .chapter-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #8B5E3C;
+      padding: clamp(3rem, 6vw, 5rem) 0;
       text-align: center;
-      margin-bottom: 0.75rem;
-    }
-    .sample-chapter .chapter-title {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.6rem, 3vw, 2.4rem);
-      font-weight: 900;
-      color: #1a1209;
-      text-align: center;
-      line-height: 1.25;
-      margin-bottom: 2.5rem;
-    }
-    .sample-chapter .chapter-title em {
-      font-style: italic;
-      font-weight: 400;
-      display: block;
-      font-size: 0.65em;
-      color: rgba(26,18,9,0.5);
-      margin-top: 0.4em;
-    }
-    .sample-chapter .chapter-body p {
-      font-size: clamp(1rem, 1.15vw, 1.1rem);
-      color: rgba(26,18,9,0.72);
-      margin-bottom: 1.3rem;
-      line-height: 1.95;
-    }
-    .sample-chapter .chapter-body p.pull-quote {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.15rem, 1.6vw, 1.35rem);
-      font-style: italic;
-      color: #1a1209;
-      border-left: 3px solid #CC0000;
-      padding-left: 1.5rem;
-      margin: 2.5rem 0;
-      line-height: 1.65;
-    }
-    .sample-chapter .chapter-cta {
-      text-align: center;
-      margin-top: 3rem;
-      padding-top: 2.5rem;
-      border-top: 1px solid rgba(26,18,9,0.1);
-    }
-    .sample-chapter .chapter-cta p {
-      font-family: 'Playfair Display', serif;
-      font-style: italic;
-      font-size: 1.15rem;
-      color: rgba(26,18,9,0.5);
-      margin-bottom: 1.2rem;
     }
 
     /* ===== SECTION: QUOTES ===== */
@@ -612,7 +460,7 @@
     }
     .hear-book .hear-book-sub {
       font-size: clamp(1rem, 1.2vw, 1.1rem);
-      color: rgba(26,18,9,0.6);
+      color: rgba(255,255,255,0.5);
       margin-bottom: 2.5rem;
       line-height: 1.8;
     }
@@ -625,14 +473,14 @@
     .hear-book .ai-note {
       font-size: 0.8rem;
       font-style: italic;
-      color: rgba(26,18,9,0.4);
+      color: rgba(255,255,255,0.3);
       line-height: 1.6;
     }
 
     /* ===== SECTION: ABOUT NORMAN ===== */
     .about-author {
       padding: clamp(5rem, 10vw, 9rem) 0;
-      background: rgba(26,18,9,0.04);
+      background: rgba(255,255,255,0.02);
     }
     .about-author .container {
       display: grid;
@@ -646,7 +494,7 @@
       height: clamp(160px, 20vw, 240px);
       border-radius: 50%;
       overflow: hidden;
-      border: 3px solid rgba(139, 94, 60, 0.2);
+      border: 3px solid rgba(255, 255, 255, 0.1);
       flex-shrink: 0;
     }
     .author-photo-wrap img {
@@ -659,17 +507,17 @@
     }
     .about-author-text p {
       font-size: clamp(1rem, 1.2vw, 1.1rem);
-      color: rgba(26,18,9,0.65);
+      color: rgba(255,255,255,0.6);
       margin-bottom: 1.5rem;
       line-height: 1.9;
     }
     .about-author-text a.inline-link {
-      color: #CC0000;
-      border-bottom: 1px solid rgba(204, 0, 0, 0.3);
+      color: #F5C500;
+      border-bottom: 1px solid rgba(245, 197, 0, 0.3);
       transition: border-color 0.3s ease;
     }
     .about-author-text a.inline-link:hover {
-      border-color: #CC0000;
+      border-color: #F5C500;
     }
 
     /* ===== SECTION: FAITH AND HISTORY ===== */
@@ -686,7 +534,7 @@
       transform: translateX(-50%);
       width: 60px;
       height: 1px;
-      background: #8B5E3C;
+      background: #F5C500;
     }
     .faith-history .container {
       max-width: 700px;
@@ -696,7 +544,7 @@
     }
     .faith-history p {
       font-size: clamp(1.05rem, 1.3vw, 1.15rem);
-      color: rgba(26,18,9,0.65);
+      color: rgba(255,255,255,0.6);
       margin-bottom: 2.5rem;
       line-height: 1.9;
     }
@@ -704,7 +552,7 @@
     /* ===== SECTION: SUBSTACK ===== */
     .substack {
       padding: clamp(5rem, 10vw, 9rem) 0;
-      background: rgba(26,18,9,0.04);
+      background: rgba(255,255,255,0.02);
       text-align: center;
       position: relative;
     }
@@ -716,7 +564,7 @@
       transform: translateX(-50%);
       width: 60px;
       height: 1px;
-      background: rgba(26,18,9,0.15);
+      background: rgba(255,255,255,0.08);
     }
     .substack .container {
       max-width: 700px;
@@ -726,7 +574,7 @@
     }
     .substack p {
       font-size: clamp(1.05rem, 1.3vw, 1.15rem);
-      color: rgba(26,18,9,0.6);
+      color: rgba(255,255,255,0.5);
       margin-bottom: 2.5rem;
       line-height: 1.8;
     }
@@ -735,7 +583,7 @@
     footer {
       padding: 4rem 0 3rem;
       background: #1a1209;
-      border-top: 1px solid rgba(139, 94, 60, 0.2);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
     footer .container {
       display: flex;
@@ -786,12 +634,7 @@
     .reveal-delay-3 { transition-delay: 0.45s; }
 
     /* ===== RESPONSIVE ===== */
-    @media (max-width: 1400px) {
-      .scripture-bg .scr-panel { font-size: clamp(0.5rem, 0.6vw, 0.68rem); }
-    }
-    @media (max-width: 900px) {
-      .scripture-bg .scr-inner { grid-template-columns: 1fr; grid-template-rows: repeat(6, 1fr); }
-      .scripture-bg .scr-panel { columns: 2; font-size: 0.55rem; }
+    @media (max-width: 900px) { grid-template-rows: repeat(6, 1fr); } font-size: 0.55rem; }
       .hero .container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -836,10 +679,7 @@
       }
     }
 
-    @media (max-width: 600px) {
-      .scripture-bg .scr-panel { columns: 1; font-size: 0.5rem; }
-      .scripture-bg .scr-title { font-size: 1.3em; }
-      .sample-chapter .chapter-card { padding: 2rem 1.5rem; }
+    @media (max-width: 600px) { font-size: 0.5rem; } }
       .nav-links {
         display: none;
         position: fixed;
@@ -847,7 +687,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(190, 180, 165, 0.98);
+        background: rgba(10, 10, 10, 0.98);
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -888,68 +728,6 @@
   </style>
 </head>
 <body>
-
-  <!-- ===== SCRIPTURE BACKGROUND (pure CSS/HTML — no images) ===== -->
-  <div class="scripture-bg" aria-hidden="true">
-    <div class="scr-inner">
-
-      <!-- Panel 1: End of Luke → John heading -->
-      <div class="scr-panel">
-        <p class="scr-ref">Luke XXIV.</p>
-        <p><span class="vn">44</span> And he said unto them, These are the words which I spake unto you, while I was yet with you, that all things must be fulfilled, which were written in the law of Moses, and in the prophets, and in the psalms, concerning me. <span class="vn">45</span> Then opened he their understanding, that they might understand the scriptures, <span class="vn">46</span> And said unto them, Thus it is written, and thus it behoved Christ to suffer, and to rise from the dead the third day: <span class="vn">47</span> And that repentance and remission of sinnes should be preached in his name among all nations, beginning at Hierusalem. <span class="vn">48</span> And ye are witnesses of these things. <span class="vn">49</span> And, behold, I send the promise of my Father upon you: but tary ye in the city of Hierusalem, untill ye be endued with power from on high. <span class="vn">50</span> And he led them out as farre as to Bethany, and he lifted up his hands, and blessed them. <span class="vn">51</span> And it came to passe, while he blessed them, he was parted from them, and caried up into heaven. <span class="vn">52</span> And they worshipped him, and returned to Hierusalem with great joy: <span class="vn">53</span> And were continually in the Temple, praising and blessing God. Amen.</p>
-        <p class="scr-title">The Holy Gospel of Iesus Christ According to Iohn</p>
-        <p class="scr-chap">Chap. I.</p>
-        <p><span class="drop-cap">I</span><span class="vn">1</span> N the beginning was the Word, and the Word was with God, and the Word was God. <span class="vn">2</span> The same was in the beginning with God. <span class="vn">3</span> All things were made by him; and without him was not any thing made that was made. <span class="vn">4</span> In him was life; and the life was the light of men. <span class="vn">5</span> And the light shineth in darknesse; and the darknesse comprehended it not. <span class="vn">6</span> There was a man sent from God, whose name was Iohn. <span class="vn">7</span> The same came for a witnesse, to beare witnesse of that Light, that all men through him might beleeve. <span class="vn">8</span> He was not that Light, but was sent to beare witnesse of that Light. <span class="vn">9</span> That was the true Light, which lighteth every man that cometh into the world. <span class="vn">10</span> He was in the world, and the world was made by him, and the world knew him not. <span class="vn">11</span> He came unto his owne, and his owne received him not. <span class="vn">12</span> But as many as received him, to them gave he power to become the sonnes of God, even to them that beleeve on his Name:</p>
-        <p class="scr-ref">Gen. 1.1 &middot; Isai. 49 &middot; Prov. 8.22</p>
-      </div>
-
-      <!-- Panel 2: John 1 continued -->
-      <div class="scr-panel">
-        <p><span class="vn">13</span> Which were borne, not of blood, nor of the will of the flesh, nor of the will of man, but of God. <span class="vn">14</span> And the Word was made flesh, and dwelt among us, (and we beheld his glory, the glory as of the only begotten of the Father,) full of grace and truth. <span class="vn">15</span> Iohn bare witnesse of him, and cryed, saying, This was hee of whom I spake, He that commeth after me is preferred before me: for he was before me. <span class="vn">16</span> And of his fulnesse have all wee received, and grace for grace. <span class="vn">17</span> For the Law was given by Moses, but grace and trueth came by Iesus Christ. <span class="vn">18</span> No man hath seene God at any time; the only begotten Sonne, which is in the bosome of the Father, he hath declared him.</p>
-        <p class="scr-ref">Exod. 34.6 &middot; Deut. 4.12 &middot; Col. 1.15</p>
-        <p><span class="vn">19</span> And this is the record of Iohn, when the Iewes sent Priests and Levites from Hierusalem to aske him, Who art thou? <span class="vn">20</span> And he confessed, and denied not; but confessed, I am not the Christ. <span class="vn">21</span> And they asked him, What then? Art thou Elias? And he saith, I am not. Art thou that Prophet? And he answered, No. <span class="vn">22</span> Then said they unto him, Who art thou? that we may give an answere to them that sent us. What sayest thou of thy selfe? <span class="vn">23</span> He said, I am the voyce of one crying in the wildernesse, Make straight the way of the Lord, as said the Prophet Esaias. <span class="vn">24</span> And they which were sent were of the Pharisees. <span class="vn">25</span> And they asked him, and said unto him, Why baptizest thou then, if thou be not that Christ, nor Elias, neither that Prophet? <span class="vn">26</span> Iohn answered them, saying, I baptize with water: but there standeth one among you, whom ye know not; <span class="vn">27</span> He it is, who comming after me is preferred before me, whose shoes latchet I am not worthy to unloose. <span class="vn">28</span> These things were done in Bethabara beyond Iordan, where Iohn was baptizing.</p>
-        <p class="scr-ref">Isai. 40.3 &middot; Mal. 3.1 &middot; Deut. 18.15</p>
-      </div>
-
-      <!-- Panel 3: John 1 continued -->
-      <div class="scr-panel">
-        <p><span class="vn">29</span> The next day Iohn seeth Iesus comming unto him, and saith, Beholde the Lambe of God, which taketh away the sinne of the world. <span class="vn">30</span> This is he of whom I said, After me commeth a man which is preferred before me: for he was before me. <span class="vn">31</span> And I knew him not: but that he should be made manifest to Israel, therefore am I come baptizing with water. <span class="vn">32</span> And Iohn bare record, saying, I saw the Spirit descending from heaven like a Dove, and it abode upon him. <span class="vn">33</span> And I knew him not: but he that sent me to baptize with water, the same said unto me, Upon whom thou shalt see the Spirit descending and remaining on him, the same is he which baptizeth with the holy Ghost. <span class="vn">34</span> And I saw, and bare record that this is the Sonne of God.</p>
-        <p class="scr-ref">Isai. 53.7 &middot; Exod. 12.3 &middot; Acts 8.32</p>
-        <p><span class="vn">35</span> Againe the next day after Iohn stood, and two of his disciples; <span class="vn">36</span> And looking upon Iesus as he walked, he saith, Behold the Lambe of God! <span class="vn">37</span> And the two disciples heard him speake, and they followed Iesus. <span class="vn">38</span> Then Iesus turned, and saw them following, and saith unto them, What seeke ye? They said unto him, Rabbi, (which is to say, being interpreted, Master,) where dwellest thou? <span class="vn">39</span> He saith unto them, Come and see. They came and saw where he dwelt, and abode with him that day: for it was about the tenth houre. <span class="vn">40</span> One of the two which heard Iohn speake, and followed him, was Andrew, Simon Peters brother. <span class="vn">41</span> He first findeth his owne brother Simon, and saith unto him, We have found the Messias, which is, being interpreted, the Christ.</p>
-      </div>
-
-      <!-- Panel 4: Psalms -->
-      <div class="scr-panel">
-        <p class="scr-title">The Booke of Psalmes</p>
-        <p class="scr-chap">Psal. I.</p>
-        <p><span class="drop-cap">B</span><span class="vn">1</span> Lessed is the man that walketh not in the counsell of the ungodly, nor standeth in the way of sinners, nor sitteth in the seate of the scornfull. <span class="vn">2</span> But his delight is in the Law of the Lord; and in his Law doth he meditate day and night. <span class="vn">3</span> And he shall be like a tree planted by the rivers of water, that bringeth foorth his fruit in his season; his leafe also shall not wither; and whatsoever he doth shall prosper. <span class="vn">4</span> The ungodly are not so: but are like the chaffe which the winde driveth away. <span class="vn">5</span> Therefore the ungodly shall not stand in the iudgment, nor sinners in the congregation of the righteous. <span class="vn">6</span> For the Lord knoweth the way of the righteous: but the way of the ungodly shall perish.</p>
-        <p class="scr-ref">Ier. 17.8 &middot; Iosh. 1.8 &middot; Prov. 4.18</p>
-        <p class="scr-chap">Psal. II.</p>
-        <p><span class="vn">1</span> Why doe the heathen rage, and the people imagine a vaine thing? <span class="vn">2</span> The Kings of the earth set themselves, and the rulers take counsell together, against the Lord, and against his Anointed, saying, <span class="vn">3</span> Let us breake their bands asunder, and cast away their cords from us. <span class="vn">4</span> He that sitteth in the heavens shall laugh: the Lord shall have them in derision. <span class="vn">5</span> Then shall he speake unto them in his wrath, and vexe them in his sore displeasure. <span class="vn">6</span> Yet have I set my King upon my holy hill of Zion. <span class="vn">7</span> I will declare the decree: the Lord hath said unto me, Thou art my Sonne; this day have I begotten thee. <span class="vn">8</span> Aske of me, and I shall give thee the heathen for thine inheritance, and the uttermost parts of the earth for thy possession. <span class="vn">9</span> Thou shalt breake them with a rod of yron; thou shalt dash them in pieces like a potters vessell. <span class="vn">10</span> Be wise now therefore, O ye Kings: be instructed, ye Iudges of the earth. <span class="vn">11</span> Serve the Lord with feare, and reioyce with trembling. <span class="vn">12</span> Kisse the Sonne, lest he be angry, and ye perish from the way, when his wrath is kindled but a little. Blessed are all they that put their trust in him.</p>
-        <p class="scr-ref">Acts 4.25 &middot; Acts 13.33 &middot; Heb. 1.5</p>
-      </div>
-
-      <!-- Panel 5: John 1 continued + John 2 start -->
-      <div class="scr-panel">
-        <p><span class="vn">42</span> And he brought him to Iesus. And when Iesus beheld him, he said, Thou art Simon the sonne of Iona: thou shalt be called Cephas, which is by interpretation, A stone. <span class="vn">43</span> The day following Iesus would goe foorth into Galilee, and findeth Philip, and saith unto him, Follow me. <span class="vn">44</span> Now Philip was of Bethsaida, the city of Andrew and Peter. <span class="vn">45</span> Philip findeth Nathanael, and saith unto him, We have found him, of whom Moses in the Law, and the Prophets, did write, Iesus of Nazareth, the sonne of Ioseph. <span class="vn">46</span> And Nathanael said unto him, Can there any good thing come out of Nazareth? Philip saith unto him, Come and see. <span class="vn">47</span> Iesus saw Nathanael comming to him, and saith of him, Behold an Israelite indeed, in whom is no guile! <span class="vn">48</span> Nathanael saith unto him, Whence knowest thou me? Iesus answered and said unto him, Before that Philip called thee, when thou wast under the figge tree, I saw thee. <span class="vn">49</span> Nathanael answered and saith unto him, Rabbi, thou art the Sonne of God; thou art the King of Israel. <span class="vn">50</span> Iesus answered and said unto him, Because I said unto thee, I saw thee under the figge tree, beleevest thou? thou shalt see greater things then these. <span class="vn">51</span> And he saith unto him, Verily, verily, I say unto you, Hereafter ye shall see heaven open, and the Angels of God ascending and descending upon the Sonne of man.</p>
-        <p class="scr-ref">Gen. 28.12 &middot; Dan. 7.13 &middot; Deut. 18.18</p>
-        <p class="scr-chap">Chap. II.</p>
-        <p><span class="vn">1</span> And the third day there was a marriage in Cana of Galilee; and the mother of Iesus was there: <span class="vn">2</span> And both Iesus was called, and his disciples, to the marriage. <span class="vn">3</span> And when they wanted wine, the mother of Iesus saith unto him, They have no wine. <span class="vn">4</span> Iesus saith unto her, Woman, what have I to doe with thee? mine houre is not yet come. <span class="vn">5</span> His mother saith unto the servants, Whatsoever he saith unto you, doe it. <span class="vn">6</span> And there were set there sixe waterpots of stone, after the manner of the purifying of the Iewes, conteining two or three firkins apiece.</p>
-      </div>
-
-      <!-- Panel 6: Psalm 23 + more -->
-      <div class="scr-panel">
-        <p class="scr-chap">Psal. XXIII.</p>
-        <p><span class="drop-cap">T</span><span class="vn">1</span> He Lord is my shepheard; I shall not want. <span class="vn">2</span> He maketh me to lie downe in greene pastures: he leadeth me beside the still waters. <span class="vn">3</span> He restoreth my soule: he leadeth me in the pathes of righteousnesse for his Names sake. <span class="vn">4</span> Yea, though I walke through the valley of the shadow of death, I will feare no evill: for thou art with me; thy rod and thy staffe they comfort me. <span class="vn">5</span> Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oyle; my cup runneth over. <span class="vn">6</span> Surely goodnesse and mercy shall follow me all the dayes of my life: and I will dwell in the house of the Lord for ever.</p>
-        <p class="scr-ref">Ezek. 34.23 &middot; Isai. 40.11 &middot; 1 Pet. 2.25</p>
-        <p class="scr-chap">Psal. XXIV.</p>
-        <p><span class="vn">1</span> The earth is the Lords, and the fulnesse thereof; the world, and they that dwell therein. <span class="vn">2</span> For he hath founded it upon the seas, and established it upon the floods. <span class="vn">3</span> Who shall ascend into the hill of the Lord? or who shall stand in his holy place? <span class="vn">4</span> He that hath cleane hands, and a pure heart; who hath not lifted up his soule unto vanity, nor sworne deceitfully. <span class="vn">5</span> He shall receive the blessing from the Lord, and righteousnesse from the God of his salvation. <span class="vn">6</span> This is the generation of them that seeke him, that seeke thy face, O Iacob. Selah. <span class="vn">7</span> Lift up your heads, O yee gates; and be ye lift up, ye everlasting doores; and the King of glory shall come in. <span class="vn">8</span> Who is this King of glory? The Lord strong and mighty, the Lord mighty in battell. <span class="vn">9</span> Lift up your heads, O ye gates; even lift them up, ye everlasting doores; and the King of glory shall come in. <span class="vn">10</span> Who is this King of glory? The Lord of hostes, he is the King of glory. Selah.</p>
-        <p class="scr-ref">1 Cor. 10.26 &middot; Gen. 1.1 &middot; Isai. 6.3</p>
-      </div>
-
-    </div>
-  </div>
-
   <!-- ===== NAVIGATION ===== -->
   <nav id="navbar">
     <div class="container">
@@ -1021,39 +799,7 @@
   <!-- ===== SAMPLE CHAPTER ===== -->
   <section class="sample-chapter" id="sample">
     <div class="container">
-      <div class="chapter-card reveal">
-        <p class="chapter-label">Read the Introduction</p>
-        <h2 class="chapter-title">Why Nobody Reads the Bible<em>(and Why That&rsquo;s About to Change)</em></h2>
-        <div class="chapter-body">
-          <p>Let&rsquo;s start with something honest: Most people don&rsquo;t read the Bible.</p>
-          <p>Not deeply. Not consistently. Not with clarity or hunger or any real expectation that something might actually happen when they do.</p>
-          <p>And here&rsquo;s the tension: Many of those same people would still say they believe the Bible.</p>
-          <p>Some even know it well.</p>
-          <p>We quote it. Defend it. Build frameworks around it. But often, we relate to it by reflex&thinsp;&mdash;&thinsp;repeating what we&rsquo;ve heard, rarely stopping to ask if we&rsquo;ve truly seen it for ourselves.</p>
-          <p>This isn&rsquo;t just about neglect. It&rsquo;s about overconfidence. We confuse familiarity with faithfulness.</p>
-          <p>We treat what we&rsquo;ve already learned as the final word.</p>
-          <p>And slowly&thinsp;&mdash;&thinsp;without realizing it&thinsp;&mdash;&thinsp;what began as reverence for the Bible becomes something else.</p>
-          <p class="pull-quote">There&rsquo;s a thin line between reverence and ego.</p>
-          <p>Between honoring God&rsquo;s Word and using it to validate what we already think.</p>
-          <p>And while misinterpretation is dangerous, there&rsquo;s something even more subtle:</p>
-          <p>The assumption that we already see clearly. That the Bible is done speaking because we&rsquo;ve stopped listening.</p>
-          <p>This book exists to interrupt that. Not with guilt&thinsp;&mdash;&thinsp;but with invitation.</p>
-          <p>Because whether you&rsquo;re skeptical, stale, stuck, or just spiritually tired, there&rsquo;s a deeper way to approach Scripture. One that&rsquo;s rooted not in performance, but in encounter.</p>
-          <p>The goal of this book isn&rsquo;t to get you to read the Bible more often. It&rsquo;s to help you read it differently&thinsp;&mdash;&thinsp;with openness, expectancy, and honesty.</p>
-          <p>Not to &ldquo;get something out of it,&rdquo; but to meet someone in it.</p>
-          <p>The Bible is not a tool for self-help, a weapon for debate, or a checklist for spiritual maturity. It&rsquo;s a living record of God&rsquo;s self-revelation. And at the center of that revelation is not a principle&thinsp;&mdash;&thinsp;but a Person.</p>
-          <p class="pull-quote">That Person isn&rsquo;t waiting for you to be more consistent. He&rsquo;s waiting to be known.</p>
-          <p>If you&rsquo;re willing to be surprised, challenged, humbled, and led&thinsp;&mdash;&thinsp;this book is for you.</p>
-          <p>Let&rsquo;s start again.</p>
-          <p>Let&rsquo;s read like it&rsquo;s the first time.</p>
-          <p>Let&rsquo;s let the Bible speak.</p>
-          <p>And let&rsquo;s listen well enough to be changed.</p>
-        </div>
-        <div class="chapter-cta">
-          <p>Want to keep reading?</p>
-          <a href="https://www.amazon.com/Nope-Thats-Not-There-yourself/dp/B0FP6KPVX3" target="_blank" rel="noopener" class="btn btn-primary">Get the Full Book &mdash; $15.99</a>
-        </div>
-      </div>
+      <a href="nope-sample.pdf" download class="btn btn-primary reveal">Download a Free Sample Chapter</a>
     </div>
   </section>
 
@@ -1106,7 +852,7 @@
       <h2 class="reveal">Hear About <span class="accent">the Book</span></h2>
       <p class="hear-book-sub reveal reveal-delay-1">A 25-minute deep dive into what <em>Nope, That's Not in There</em> is really about&thinsp;&mdash;&thinsp;and why it might change how you read Scripture forever.</p>
       <div class="soundcloud-wrap reveal reveal-delay-2">
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/norman-snell/nope-thats-not-in-there&color=%238B5E3C&inverse=false&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false"></iframe>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/norman-snell/nope-thats-not-in-there&color=%23F5C500&inverse=true&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false"></iframe>
       </div>
       <p class="ai-note reveal reveal-delay-3">Generated from the book by NotebookLM&thinsp;&mdash;&thinsp;an AI-powered conversation about what's inside.</p>
     </div>
@@ -1151,7 +897,7 @@
       <ul class="footer-links">
         <li><a href="#book">Book</a></li>
         <li><a href="https://youtube.com/@faithhistoryshow" target="_blank" rel="noopener">Faith and History</a></li>
-        <li><a href="mailto:contact@normansnell.com">Contact</a></li>
+        <li><a href="mailto:normansnell64@gmail.com">Contact</a></li>
       </ul>
       <p class="footer-copy">&copy; 2025 Norman Snell. All rights reserved.</p>
     </div>
